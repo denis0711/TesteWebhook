@@ -8,8 +8,7 @@ Testando o Push
 
 Meu script webhook
 
-
-
+``` csharp
 [HttpPost("webhook")]
 [AllowAnonymous]
 public IActionResult ReceberWebhook([FromBody] Webhook payload)
@@ -25,3 +24,4 @@ private async void MinhaAcao(Webhook payload)
     var resultado = await  service.CreateAsync(payload);
     
 }
+```
